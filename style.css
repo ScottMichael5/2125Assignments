@@ -21,23 +21,43 @@ th{
   background-color: rgb(200,80,200);
 }
 header{
+  border: solid 1px #333;
   background-image: url("images/IMG_1715.jpg");
   background-repeat: no-repeat;
   background-size: 800px 800px;
   background-position: center;
   background-blend-mode: lighten;
-  font-size: 150%; 
+  font-size: 150%;
+  grid-area: header;
 }
 head,header,p,ol,ul,li{
   font-family: Verdana;
 }
 nav{
+  border: solid 1px #333;
   font-style: oblique;
   font-size: 115;
+  grid-area: nav;
 }
+p{grid-area: p;}
 main{
+  border: solid 1px #333;
   font-size: 110%;
+  grid-area: main;
 }
 footer{
+  border: solid 1px #333;
+  grid-area: footer;
   font-style: italic;
+}
+body{
+  border: solid 1px #333;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% auto auto auto;
+  grid-template-rows: 100% auto auto auto;
+  grid-template-areas:
+    "header header header" 
+    "nav p main"
+    "footer footer footer"
 }
