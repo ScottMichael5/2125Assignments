@@ -7,13 +7,18 @@ table,td, th{
   border-collapse: collapse;
   border:1px solid grey;
   margin: 1px;
-} 
+}
+li{
+  color: #008000;
+  size: 1.5em;
+  font-family: serif;
+}
 th{
   background-color: #000000;
   color: rgb(255,255,255); 
   }
 .color1{
-  background-color: rgb(244,0,0);
+  background-color: rgb(200,80,200);
 }
 header{
   background-image: url("images/IMG_1715.jpg");
@@ -21,4 +26,18 @@ header{
   background-size: 800px 800px;
   background-position: center;
   background-blend-mode: lighten;
+  font-size: 150%; 
+}
+head,header,p,ol,ul,li{
+  font-family: Verdana;
+}
+nav{
+  font-style: oblique;
+  font-size: 115;
+}
+main{
+  font-size: 110%;
+}
+footer{
+  font-style: italic;
 }
